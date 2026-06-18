@@ -2,7 +2,7 @@
 
 An AI-powered Knowledge Assistant that enables manufacturing teams to access operational knowledge through natural language queries. The system uses Retrieval-Augmented Generation (RAG) to retrieve relevant information from company documents and generate context-aware responses.
 
----
+--- 
 
 ## Business Problem
 
