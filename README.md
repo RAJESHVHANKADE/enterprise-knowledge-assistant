@@ -11,7 +11,7 @@ Manufacturing organizations often maintain large volumes of operational document
 These documents typically include:
 
 * Standard Operating Procedures (SOPs)
-* Maintenance Manuals
+* Maintenance Manuals 
 * Troubleshooting Guides
 * Quality Assurance Procedures
 * Safety Guidelines
