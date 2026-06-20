@@ -2,6 +2,52 @@
 
 An AI-powered Knowledge Assistant that enables manufacturing teams to access operational knowledge through natural language queries. The system uses Retrieval-Augmented Generation (RAG) to retrieve relevant information from company documents and generate context-aware responses.
 
+
+---
+
+# Architecture
+
+```mermaid
+flowchart LR
+
+    A[PDF & DOCX Documents]
+
+    B[Text Extraction]
+
+    C[Document Chunking]
+
+    D[Embedding Generation]
+
+    E[FAISS Vector Index]
+
+    F[User Query]
+
+    G[Query Embedding]
+
+    H[Hybrid Retrieval]
+
+    I[Context Construction]
+
+    J[LLM]
+
+    K[Generated Answer]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+
+    F --> G
+    G --> H
+
+    E --> H
+
+    H --> I
+    I --> J
+    J --> K
+```
+
+
 --- 
 
 ## Business Problem
@@ -53,49 +99,7 @@ The system processes manufacturing documents, converts them into searchable vect
 
 Instead of relying solely on model knowledge, responses are generated using retrieved document context, helping ensure answers remain aligned with company documentation.
 
----
 
-# Architecture
-
-```mermaid
-flowchart LR
-
-    A[PDF & DOCX Documents]
-
-    B[Text Extraction]
-
-    C[Document Chunking]
-
-    D[Embedding Generation]
-
-    E[FAISS Vector Index]
-
-    F[User Query]
-
-    G[Query Embedding]
-
-    H[Hybrid Retrieval]
-
-    I[Context Construction]
-
-    J[LLM]
-
-    K[Generated Answer]
-
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-
-    F --> G
-    G --> H
-
-    E --> H
-
-    H --> I
-    I --> J
-    J --> K
-```
 
 ---
 
